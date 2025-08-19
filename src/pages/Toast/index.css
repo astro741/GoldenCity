@@ -62321,8 +62321,8 @@ DEPRECATED
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 357px;
-  padding: 30px;
+  width: 370px;
+  padding: 15px;
   padding-bottom: 10px;
   font-weight: 400;
 }
@@ -62389,7 +62389,7 @@ DEPRECATED
 }
 
 .unlock-page__support {
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 0.75rem;
 }
 
