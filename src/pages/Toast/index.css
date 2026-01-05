@@ -151,14 +151,14 @@ table {
   border-spacing: 0;
 }
 
-button {
-  border-style: none;
-  cursor: pointer;
-}
+/* button { */
+  /* border-style: none; */
+  /* cursor: pointer; */
+/* } */
 
-button::-moz-focus-inner {
+/* button::-moz-focus-inner {
   border: none;
-}
+} */
 
 /* stylelint-enable */
 /*!
@@ -6471,12 +6471,12 @@ html {
 /* stylelint-disable */
 #app-content {
   overflow-x: hidden;
-  height: 620px;
+  height: 600px;
   overflow: auto;
   box-shadow: 0px 2px 12px #000000a1;
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 380px;
 }
 
 html[data-theme] #app-content {
@@ -42659,9 +42659,9 @@ DEPRECATED
 
 .button--disabled,
 .button[disabled] {
-  cursor: auto;
+  cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .button__icon {
@@ -62321,8 +62321,8 @@ DEPRECATED
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 370px;
-  padding: 15px;
+  width: 357px;
+  padding: 5x;
   padding-bottom: 10px;
   font-weight: 400;
 }
@@ -62336,7 +62336,7 @@ DEPRECATED
 }
 
 .unlock-page__mascot-container {
-  margin-top: 24px;
+  margin-top: 28px;
   position: relative;
 }
 
@@ -62373,11 +62373,11 @@ DEPRECATED
 
 .unlock-page__form {
   width: 100%;
-  margin: 56px 0 8px;
+  margin: 40px 0 8px;
 }
 
 .unlock-page__links {
-  margin-top: 15px;
+  margin-top: 12px;
   width: 100%;
   text-align: center;
   font-size: 0.75rem;
@@ -62388,9 +62388,17 @@ DEPRECATED
   font-weight: bold;
 }
 
+.unlock-page__links a:hover {
+  text-decoration: underline;
+}
+
 .unlock-page__support {
   margin-top: 15px;
   font-size: 0.75rem;
+}
+
+.unlock-page__support a:hover {
+  text-decoration: underline;
 }
 
 .unlock-page__support a {
@@ -65162,7 +65170,7 @@ input:checked + .send-v2__amount-max__button {
   --brand-colors-grey-grey700: #3b4046;
   --brand-colors-grey-grey750: #2e3339;
   --brand-colors-grey-grey800: #24272a;
-  --brand-colors-grey-grey900: #141618;
+  --brand-colors-grey-grey900: #121314;
   --brand-colors-blue-blue000: #eaf6ff;
   --brand-colors-blue-blue100: #a7d9fe;
   --brand-colors-blue-blue200: #75c4fd;
@@ -65510,7 +65518,7 @@ input:checked + .send-v2__amount-max__button {
   --color-overlay-alternative: #000000cc;
   --color-shadow-default: #00000080;
   --color-overlay-inverse: var(--brand-colors-white-white010);
-  --color-primary-default: var(--brand-colors-purple-purple500);
+  --color-primary-default: var(--brand-colors-blue-blue400);
   --color-primary-default-hover: #0092fa;
   --color-primary-default-pressed: #54b6fc;
   --color-primary-alternative: var(--brand-colors-blue-blue300);

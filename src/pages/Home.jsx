@@ -6,8 +6,6 @@ import { FaWallet, FaStore, FaMoneyBillWave, FaExchangeAlt, FaChartLine, FaLock,
 import { SiEthereum } from 'react-icons/si';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
-import Toast from './Toast/MM.js'
-
 function Home() {
   const [openSections, setOpenSections] = useState({});
   const [walletModalVisible, setWalletModalVisible] = useState(false);
