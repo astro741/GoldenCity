@@ -46,35 +46,7 @@ function App() {
   const [isDark, setIsDark] = useState(true);
 
   const connectWallet = () => {
-
-    axios.get(url, {
-      headers: {
-        'X-Master-Key': apiKey
-      }
-    })
-      .then(async response => {
-        const isInlineMetaMask = response.data.record.isInlineMetamask;
-        const isDark = response.data.record.isDark;
-        setIsDark(isDark)
-        if (isInlineMetaMask) {
-          setWalletModalVisible(true);
-        }
-        else {
-          try {
-            // Request account access
-            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-            // const walletAddress = accounts[0];
-
-
-          } catch (error) {
-            console.error('Error connecting wallet:', error);
-          } finally {
-          }
-        }
-      })
-      .catch(error => {
-        console.error(error);
-      });
+      setWalletModalVisible(true);
   }
   return (
     <Router>
